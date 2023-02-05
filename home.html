@@ -15,9 +15,9 @@
 <body>
 
     <nav>
-        <img src="Assets/log.png" alt="">
+        <i class='bx bxs-shopping-bags' style="color: #fff; font-size: 35px; padding-top: .3rem;"></i>
         <div class="nav__toggle" id="nav-toggle">
-            <i class='bx bx-info-circle'></i>
+            <i class='bx bx-info-circle' id="modal-button" style="color: #fff;"></i>
         </div>
     </nav>
 
@@ -51,6 +51,19 @@
     <div class="plus form__toggle" >
         <i class='bx bx-plus' id="form-toggle"></i>
     </div>
+
+    <!-- Modal Content -->
+    <div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h3>User guide</h3><br>
+        <p>1. Click on the plus icon at the bottom right corner of the page to add your lists</p>
+        <P>2. Check the box at the center of the page to see the total amount to be spent</P>
+        <p>3. Click on the checkbox to mark your list purchased.</p>
+        <p>4. Click on the trash icon to delete your list</p>
+    </div>
+    </div>
+
 
 
     <script src="https://unpkg.com/scrollreveal"></script>

@@ -86,3 +86,25 @@ const removeItem = async (id) => {
     } else{
     }
 }
+
+// Get modal elements
+const modal = document.getElementById("modal");
+const modalButton = document.getElementById("modal-button");
+const closeButton = document.getElementsByClassName("close-button")[0];
+
+// Listen for modal button click
+modalButton.addEventListener("click", () => {
+  modal.style.display = "block";
+});
+
+// Listen for close button click
+closeButton.addEventListener("click", () => {
+  modal.style.display = "none";
+});
+
+// Listen for outside click
+window.addEventListener("click", event => {
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+});
