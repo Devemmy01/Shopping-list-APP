@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List_Me</title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="Assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="./dexie.min.js"></script>
+</head>
+<body>
+
+    <nav>
+        <img src="Assets/log.png" alt="">
+        <div class="nav__toggle" id="nav-toggle">
+            <i class='bx bx-info-circle'></i>
+        </div>
+    </nav>
+
+    <div id="totalPriceDiv" class="totalpricediv"></div>
+    <div class="container form__menu" id="form-menu">
+        <i class='bx bx-x' id="form-cancel"></i>
+        <form id="itemForm" class="form">
+            <label>
+                Item Name:
+                <input type="text" id="nameInput" required>
+            </label>
+            <label>
+                Quantity:
+                <input type="number" id="quantityInput" value="1">
+            </label>
+            <label>
+                Price:
+                <input type="text" id="priceInput" value="0">
+            </label>
+            
+            <div class="btn">
+                <button type="submit" id="addItemButton">
+                    Add Item
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <div id="itemsDiv" class="itemsdiv"></div>
+    
+    <div class="plus form__toggle" >
+        <i class='bx bx-plus' id="form-toggle"></i>
+    </div>
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="index.js"></script>
+</body>
+</html>

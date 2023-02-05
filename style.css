@@ -1,0 +1,208 @@
+*{
+    margin: unset;
+    padding: unset;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: rgba(87, 85, 85, 0.034);
+    background-size: auto;
+    background-position: center;
+    background-position-y: top;
+    color: #000;
+    text-align: center;
+    font-family: system-ui, -apple-system, 
+    BlinkMacSystemFont, 'Segoe UI', Roboto, 
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 
+    'Helvetica Neue', sans-serif;
+}
+
+.form__menu{
+    position:fixed;
+    margin: 0 auto;
+    top: 100%;
+    background-color: #eaeaea;
+    transition: .4s;
+    box-shadow: 0 4px 4px rgba(0,0,0,.1);
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    z-index: 10; 
+}
+.show-menu{
+    top: 3rem;
+    margin: 0 auto;
+   
+    /* margin-bottom: 2rem; */
+}
+
+@media screen and (max-width: 768px) {
+    .show-menu{
+        top: rem;
+    }
+    .plus .bx-plus{
+        margin-top: 9%;
+    }
+}
+@media screen and (max-width: 350px) {
+    /* .show-menu{
+        top: -2.5rem;
+    } */
+    .plus{
+        padding: .5rem;
+    }
+}
+
+
+
+nav {
+    background-color: #eaeaea;
+    position: fixed;
+    height: 3rem;
+    line-height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 auto;
+    margin-top: -5rem;
+    z-index: 10;
+    width: 100%;
+}
+nav img{
+    height: 50px;
+    display: block;
+}
+nav .nav__toggle i {
+    font-size: 25px;
+    padding-top: .7rem;
+    color: #000;
+}
+
+.container{
+    padding: 1rem;
+    margin-top: 7rem;
+}
+
+#form-cancel{
+    font-size: 30px;
+    justify-content: right;
+    display: flex;
+}
+.bx-x{
+    padding-bottom: 1.5rem;
+}
+#itemForm{
+    margin-top: -1.5rem;
+}
+#itemForm label{
+    text-align: left;
+    display: grid;
+    gap: .3rem;
+    font-size: 15px;
+    margin-bottom: .5rem;
+}
+
+#itemForm input{
+    height: 2.5rem;
+    text-align: center;
+    border: 1px solid #bfbfbf;
+    outline: none;
+    font-size: 15px;
+}
+
+#addItemButton{
+    border: none;
+    background: #9945ce;
+    color: #fff;
+    padding: 0.5rem;
+    height: 50px;
+    width: 100px;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#itemsDiv{
+    margin-top:  3rem;
+    margin-bottom:  2rem;
+}
+
+.item {
+    display: grid;
+    /* width: 90vw; */
+    grid-template-columns: 0fr 10fr 0fr;
+    background: #eaeaea;
+    margin-top: 0.5rem;
+    margin: 5px 10px;
+}
+
+.checkbox{
+    height: 100%;
+    width: 2.3rem;
+}
+input[type=checkbox] {
+    accent-color: #9945ce;
+}
+
+.itemInfo{
+    text-align: center;
+    color: #000;
+}
+
+.deleteButton{
+    margin: 0 0 0 auto;
+    border: unset;
+    background:#9945ce;
+    color: #fff;
+    font-size: 1.6rem;
+    width: 2.3rem;
+    height: 100%;
+}
+.deleteButton:hover{
+    color: red;
+}
+.deleteButton:active{
+    margin-top: 3px;
+}
+
+.purchased{
+    background: rgba(9, 255, 0, 0.322);
+}
+
+.purchased p {
+    text-decoration: line-through;
+}
+
+.plus{
+    position: fixed;
+    right: 1rem;
+    bottom: 0%;
+    margin-bottom: .7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 50%;
+    z-index: 10;
+    background: #9945ce;
+    transition: .4s;     
+}
+.plus .bx-plus{
+    color: #fff;
+    position: relative;
+    font-size: 30px;
+    cursor: pointer;
+}
+#totalPriceDiv{
+    background: #9945ce;
+    width: fit-content;
+    padding: .8rem;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 7px;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
